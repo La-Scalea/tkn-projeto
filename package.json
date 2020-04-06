@@ -19,7 +19,12 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "dotenv": "^8.2.0",
+    "pg": "^8.0.0",
+    "pg-hstore": "^2.3.3",
     "rxjs": "~6.5.4",
+    "sequelize": "^5.21.6",
+    "sequelize-cli": "^5.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
