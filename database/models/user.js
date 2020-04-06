@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
     USUA_DT_CRIACAO: DataTypes.DATE,
     USUA_DT_ALTERACAO: DataTypes.DATE,
     USUA_BL_ATIVO: DataTypes.BOOLEAN
-  }, {});
+  }, {freezeTableName: true, tableName: 'user', id: false});
   User.associate = function(models) {
     // associations can be defined here
   };

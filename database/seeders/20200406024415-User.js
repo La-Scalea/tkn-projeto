@@ -3,7 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) =>
     queryInterface.bulkInsert(
-      'Users', // SELECT skeys(hstore(NULL::"public"."Users"));
+      'User', // SELECT skeys(hstore(NULL::"public"."User"));
     [
       {
         USUA_TX_NOME_USUARIO: 'Rodrigo La Scalea',
@@ -27,5 +27,5 @@ module.exports = {
     {},
   ),
 
-  down: (queryInterface, Sequelize) => queryInterface.bulkDelete('Usuarios', null, {}),
+  down: (queryInterface, Sequelize) => queryInterface.bulkDelete('User', null, {}),
 };
