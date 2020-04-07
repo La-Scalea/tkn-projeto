@@ -33,6 +33,7 @@ const criarTelefone = async (req, res) => {
       return res.status(400).json({error: 'Usuário não encontrado'})
     }
     else{
+      models.Telefone.associate(models.Usuario);
       const telefone = await models.Telefone.create(TELE_NR_DDD, TELE_TX_NUMERO, USUA_NR_IDENTIFICADOR);
       return res.status(201).json({ telefone });
     }
