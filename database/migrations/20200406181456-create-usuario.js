@@ -6,8 +6,8 @@ module.exports = {
         USUA_NR_IDENTIFICADOR: {
           allowNull: false,
           primaryKey: true,
-          type: Sequelize.UUID,
-          defaultValue: Sequelize.UUIDV4
+          autoIncrement: true,
+          type: Sequelize.INTEGER
         },
         USUA_TX_NOME_USUARIO: {
           allowNull: false,

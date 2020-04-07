@@ -7,7 +7,7 @@ module.exports = {
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
-        type: Sequelize.INTEGER,
+        type: Sequelize.INTEGER
       },
       TELE_NR_DDD: {
         allowNull: false,
@@ -18,8 +18,8 @@ module.exports = {
         type: Sequelize.STRING
       },
       USUA_NR_IDENTIFICADOR: {
+        type: Sequelize.INTEGER,
         allowNull: false,
-        type: Sequelize.UUID,
         references: {
           model: 'Usuario',
           key:'USUA_NR_IDENTIFICADOR'
