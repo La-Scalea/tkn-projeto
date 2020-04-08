@@ -6,7 +6,6 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true,
       type: DataTypes.INTEGER,
-      //defaultValue: DataTypes.INTEGER
     },
     USUA_TX_NOME_USUARIO: DataTypes.STRING,
     USUA_CH_GENERO: DataTypes.CHAR,
@@ -18,7 +17,6 @@ module.exports = (sequelize, DataTypes) => {
     },
   }, {timestamps: false, freezeTableName: true});
   Usuario.associate = function(models) {
-    // associations can be defined here
     Usuario.hasMany(models.Telefone);
   };
   Usuario.removeAttribute('id');
