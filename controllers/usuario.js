@@ -42,7 +42,7 @@ const usuarioAlterar = async (req, res) => {
     if (usuario) {
       //hook é necessário para se referir a instancia especifica da alteração
       const usuarioAlterado = await models.Usuario.update(req.body, { where: { USUA_NR_IDENTIFICADOR: id }, individualHooks: true });
-      return res.status(httpStatus.OK).json({ usuarioAlterado });
+      return res.status(httpStatus.OK).json({ usuario:usuarioAlterado });
     }else{
       return res.status(httpStatus.NOT_FOUND).send("Não foi possivel alterar o usuário, pois ele não foi encontrado");
     }
