@@ -9,16 +9,20 @@ module.exports = {
           autoIncrement: true,
           type: Sequelize.INTEGER
         },
-        USUA_TX_NOME_USUARIO: {
+        USUA_TX_NOME: {
           allowNull: false,
           type: Sequelize.STRING
         },
         USUA_CH_GENERO: {
           allowNull: false,
-          type: Sequelize.CHAR
+          type: Sequelize.STRING
         },
         USUA_TX_EMAIL: {
           unique: true,
+          allowNull: false,
+          type: Sequelize.STRING
+        },
+        USUA_TX_SENHA: {
           allowNull: false,
           type: Sequelize.STRING
         },
