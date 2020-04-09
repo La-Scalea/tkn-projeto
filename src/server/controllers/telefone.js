@@ -1,4 +1,5 @@
-const models = require( '../database/models');
+const httpStatus = require('http-status-codes');
+const models = require('../models');
 
 const criarTelefone = async (req, res) => {
   try {

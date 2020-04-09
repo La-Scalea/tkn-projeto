@@ -1,6 +1,6 @@
 var compression = require('compression');
 const express = require('express');
-const routes = require('../routes');
+const routes = require('./routes/index');
 
 const server = express();
 
@@ -10,6 +10,8 @@ server.use(express.urlencoded({ extended: true })) // for parsing application/x-
 server.get('/', (req, res, next) =>{
     res.send("Bem vindo a API");
 });
+
+server.use('/', routes)
 
 server.use(compression())
 

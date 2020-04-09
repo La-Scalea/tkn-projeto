@@ -1,5 +1,5 @@
-const models = require('../database/models');
 const httpStatus = require('http-status-codes');
+const models = require('../models/index');
 
 const usuarioCriar = async (req, res) => {
   try {
